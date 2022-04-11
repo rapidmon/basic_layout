@@ -1,0 +1,65 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+    font-family: 'Spoqa Han Sans Neo';
+}
+
+html, body, h1, a{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: #f2f2f2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: white;
+    width: 500px;
+    height: 240px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::before{
+    content: "";
+    display: block;
+    background-image: url(./images/weniv-logo-blue.png);
+    background-size: 138px 40px;
+    width: 138px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+h1{
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 28px;
+}
+
+a{
+    width: 440px;
+    height: 60px;
+    background-color: #2F80ED;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 700;
+    font-size: 22px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
