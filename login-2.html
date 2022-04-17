@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-2.css">
     <title>login-2</title>
 </head>
 <body>
-    <header>로그인 또는 회원가입</header>
-    <section>
-        <h1>위니브에서 여러분의 궁금증을 해결하세요! :)</h1>
-        <input type="text" placeholder="아이디">
-        <input type="password" placeholder="비밀번호">
-        <button>로그인</button>
-        <a href="">회원가입 | 아이디/비밀번호 찾기</a>
-        <span>또는</span>
-        <a href="">구글 계정으로 로그인</a>
-        <a href="">페이스북 계정으로 로그인</a>
-        <a href="">네이버 계정으로 로그인</a>
-        <a href="">카카오톡 계정으로 로그인</a>
+    <header class="head">로그인 또는 회원가입</header>
+    <section class="login_area">
+        <h1 class="heading">위니브에서 여러분의 궁금증을 해결하세요! :)</h1>
+        <form class="login_form" action="dropbox.html" method="post">
+            <input class="login id" type="text" placeholder="아이디" required>
+            <input class="login password" type="password" placeholder="비밀번호" required>
+            <input class="check_point" type="checkbox" id="check">
+            <label class="maintain" for="check">로그인 상태 유지</label>
+            <button class="login_button">로그인</button>
+        </form>
+        <div class="signup_link">
+            <a class="signup" href="">회원가입</a>
+            <span class="mid">|</span>
+            <a class="signup" href="">아이디/비밀번호 찾기</a>
+        </div>
+        <span class="or">또는</span>
+        <a class="link google" href="">구글 계정으로 로그인</a>
+        <a class="link facebook" href="">페이스북 계정으로 로그인</a>
+        <a class="link naver" href="">네이버 계정으로 로그인</a>
+        <a class="link kakao" href="">카카오톡 계정으로 로그인</a>
     </section>
 </body>
 </html>
+<script>
+    function checkUserId(id) {
+        //Id가 입력되었는지 확인하기
+        if (!checkExistData(id, "아이디를"))
+            return false;
+
+        if (!idRegExp.test(id)) {
+            alert("아이디는 영문 대소문자와 숫자 4~12자리로 입력해야합니다!");
+            form.userId.value = "";
+            form.userId.focus();
+            return false;
+        }
+        return true; //확인이 완료되었을 때
+    }
+</script>

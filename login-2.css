@@ -1,0 +1,237 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+    font-family: 'Spoqa Han Sans Neo';
+}
+
+html, body, h1, a, span, button{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: #f2f2f2;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width: 520px;
+    height: 712px;
+    background-color: white;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.head{
+    height: 58px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.head:after{
+    content: "";
+    background-image: url(./images/close.png);
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    margin: 0 24px 0 148px;
+}
+
+.login_area{
+    padding: 23px;
+}
+
+.heading{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 3px;
+    height: 24px;
+}
+
+.login_form{
+    height: 242px;
+}
+
+.login{
+    width: 472px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #767676;
+    padding: 15px 0 15px 16px;
+    box-sizing: border-box;
+}
+
+.id{
+    margin-top: 24px;
+}
+
+.password{
+    margin: 10px 0 16px 0;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.check_point + .maintain{
+    display: inline-block;
+    line-height: 22px;
+    cursor: pointer;
+    padding-left: 34px;
+    background: url(./images/icon_check_empty.png) no-repeat;
+    background-size: 22px 22px;
+}
+
+.check_point:checked + .maintain{
+    background: url(./images/icon_check.png) no-repeat;
+}
+
+.maintain{
+    font-weight: 500;
+    font-size: 16px;
+    color: #767676;   
+}
+
+.login_button{
+    width: 472px;
+    height: 50px;
+    background-color: #2F80ED;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.signup_link{
+    display: inline-block;
+    line-height: 18px;
+    text-align: center;
+    margin: 20px 0 25px 134px;
+}
+
+.signup{
+    font-weight: 400;
+    font-size: 14px;
+    color: #767676;
+    text-decoration: none;
+}
+
+.signup:hover{
+    text-decoration: underline;
+}
+
+.mid{
+    font-weight: 400;
+    font-size: 14px;
+    color: #767676;
+    margin: 0 10px 0 10px;
+}
+
+.or::before{
+    content: "";
+    display: inline-block;
+    height: 1px;
+    background-color: #C4C4C4;
+    width: 210px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.or{
+    display: inline-block;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #767676;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.or::after{
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    height: 1px;
+    background-color: #C4C4C4;
+    width: 210px;
+    margin-left: 12px;
+}
+
+.link{
+    position: relative;
+    width: 472px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #767676;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.link::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url(./images/css_sprites.png);
+    background-size: 117px 78px;
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 39px;
+    left: 1px;
+    top: center;
+}
+
+.google{
+    margin-top: 20px;
+    border: 1px solid #767676;
+}
+
+.google::before{
+    background-position: left top;
+}
+
+.facebook{
+    border: 1px solid #2D9CDB;
+}
+
+.facebook::before{
+    background-position: right top;
+}
+
+.naver{
+    border: 1px solid #00BF18;
+}
+
+.naver::before{
+    background-position: left bottom;
+}
+
+.kakao{
+    border: 1px solid #F2C94C;
+}
+
+.kakao::before{
+    background-position: center top;
+}

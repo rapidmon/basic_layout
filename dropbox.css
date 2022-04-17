@@ -1,0 +1,41 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+option{
+    color: #9B51E0;
+}
+.cl{
+    width: 200px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 71px 0 0 120px;
+
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 14px;
+    cursor: pointer;
+}
+
+.cl::placeholder{
+    color: black;
+}
+
+.cl:focus{
+    outline: 1px solid #9B51E0;
+    box-shadow: 0 0 3px 3px #F8E4FF;
+    font-size: 14px;
+}
+
+select option[value=""] {
+	display: none;
+}
