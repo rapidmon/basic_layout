@@ -8,7 +8,7 @@
     <title>login-2</title>
 </head>
 <body>
-    <header class="head">로그인 또는 회원가입</header>
+    <header class="head">로그인 또는 회원가입<a type="button" class="close" href="./login.html"></a></header>
     <section class="login_area">
         <h1 class="heading">위니브에서 여러분의 궁금증을 해결하세요! :)</h1>
         <form class="login_form" id="loginForm" action="dropbox.html" method="post">
@@ -18,7 +18,7 @@
             <label for="pwinput" class="alert" id="alertpw"></label>
             <input class="check_point" type="checkbox" id="check">
             <label class="maintain" for="check">로그인 상태 유지</label>
-            <button type="button" class="login_button">로그인</button>
+            <button type="button" class="login_button" id="loginbtn">로그인</button>
         </form>
         <div class="signup_link">
             <a class="signup" href="">회원가입</a>
@@ -34,9 +34,9 @@
 </body>
 </html>
 <script>
-    const $form = document.getElementById("loginForm")
+    const $btn = document.getElementById("loginbtn")
 
-    $form.addEventListener("click", function(){
+    $btn.addEventListener("click", function(){
         const $id = document.getElementById("idinput").value;
         if($id === ""){
             document.getElementById("alertid").innerHTML="아이디를 입력해주세요."
@@ -56,6 +56,9 @@
         else if($pw != "" || $id === ""){
             document.getElementById("alertpw").innerHTML=""
             document.querySelector(".password").style.marginBottom="0"
+        }
+        if($pw != "" && $id != ""){
+            $btn.setAttribute('type', '')
         }   
     })
 </script>
