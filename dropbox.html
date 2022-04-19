@@ -10,11 +10,11 @@
 <body>
 	<header class="head" id="head">최애 프로그래밍 언어<button class="arrow" id="arrow"></button></header>
 	<ul id="languages" class="list">
-    	<li class="opt" value="Python">Python</li>
-    	<li class="opt" value="Java">Java</li>
-    	<li class="opt" value="JavaScript">JavaScript</li>
-    	<li class="opt" value="C#">C#</li>
-        <li class="opt" value="C++">C++</li>
+    	<li class="opt" value="Python" type="button">Python</li>
+    	<li class="opt" value="Java" type="button">Java</li>
+    	<li class="opt" value="JavaScript" type="button">JavaScript</li>
+    	<li class="opt" value="C#" type="button">C#</li>
+        <li class="opt" value="C++" type="button">C++</li>
 	</ul>
 </body>
 <script>
@@ -37,6 +37,18 @@
 			$arrow.style.backgroundSize="12px 8px"
 			$head.style.outline="1px solid #9B51E0"
 			$head.style.boxShadow="0 0 0px 4px #F8E4FF"
+		}
+	})
+
+	$list.addEventListener('click', function(e){
+		if(e.target.textContent.length<11){
+			$head.childNodes[0].textContent = e.target.textContent
+			$list.style.display="none"
+			$arrow.style.background=""
+			$arrow.style.background="url('./images/Polygon\ down.png');"
+			$arrow.style.backgroundSize="12px 8px"
+			$head.style.outline="1px solid #C4C4C4"
+			$head.style.boxShadow=""
 		}
 	})
 </script>
