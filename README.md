@@ -2,10 +2,10 @@
 
 ## Homepage
 
-<img src="./images/basic_page" alt="homepage img"></img>
-<img src="./images/link_to_loginpage" alt="homepage img"></img>
-<img src="./images/loginpage" alt="homepage img"></img>
-<img src="./images/dropbox" alt="homepage img"></img>
+<img src="./images/basic_page.png" alt="homepage img"></img>
+<img src="./images/link_to_loginpage.png" alt="homepage img"></img>
+<img src="./images/loginpage.png" alt="homepage img"></img>
+<img src="./images/dropbox.png" alt="homepage img"></img>
 
 ## Repository Description
 
